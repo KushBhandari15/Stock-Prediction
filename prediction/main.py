@@ -35,4 +35,32 @@ def stock_prediction ():
                             close = data['Close'])])
     st.subheader("Raw data - graph")
     st.plotly_chart(fig)
+
+        #Pre-processing the data before predicting
+    #Prophet function needs the column to named as ds(Date) and y(Close)
+    df_train = data[['Date', 'Close']]
+    df_train = df_train.rename(columns={"Date": "ds", "Close": "y"})
     
+    #Training our model
+    model = Prophet()
+    model.fit(df_train)
+    
+    #Forecasting stocks prices
+    future = model.make_future_dataframe(periods = period)
+    forecast = model.predict(future)
+    
+    #Displaying head and tail of the forecast data
+    st.header("Forecast data - head")
+    st.write(forecast.head())
+    st.header("Forecast data - tail")
+    st.write(forecast.tail())
+    
+    #Displaying forecast data using graphs
+    fig1 = model.plot(forecast)
+    st.subheader("Forecast data - graph")
+    st.plotly_chart(fig1)
+    
+    #Displaying forecast data's components
+    st.subheader("Forecast components - graph")
+    fig2 = model.plot_components(forecast)
+    st.write(fig2)
