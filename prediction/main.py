@@ -64,3 +64,45 @@ def stock_prediction ():
     st.subheader("Forecast components - graph")
     fig2 = model.plot_components(forecast)
     st.write(fig2)
+
+def test_stock_prediction(ticker, START, period):
+    
+    TODAY = date.today().strftime("%Y-%m-%d")
+    try:
+        #Using yfinance library to retrieve stock data
+        data = yf.download(ticker, START, TODAY)
+        #Reset index for date to be included as a column
+        data.reset_index(inplace=True)
+        data = pd.DataFrame(data)
+        if data.empty:
+            raise ValueError("Error: No data available for the selected stock and time period.")
+                
+        
+        #Pre-processing the data before predicting
+        #Prophet function needs the column to named as ds(Date) and y(Close)
+        df_train = data[['Date', 'Close']]
+        df_train = df_train.rename(columns={"Date": "ds", "Close": "y"})
+        
+        #Training our model
+        model = Prophet()
+        model.fit(df_train)
+        
+        #Forecasting stocks prices
+        future = model.make_future_dataframe(periods = period)
+        forecast = model.predict(future)
+        
+        if forecast.empty:
+            raise ValueError("Error: Unable to generate forecast for the selected stock and time period.")
+        
+    except Exception as e:
+        raise Exception()
+    
+
+    
+    
+def main():
+    #test_stock_prediction('AAPL', "2010-01-01", 2*365)
+    stock_prediction()
+
+if __name__ == '__main__':
+    main()
