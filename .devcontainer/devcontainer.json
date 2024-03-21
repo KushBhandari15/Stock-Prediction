@@ -1,0 +1,16 @@
+{
+  "name": "Python 3.10 with Pandas Development Environment",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+     "vscode": {
+         "settings": {
+             "terminal.integrated.shell.linux": "/bin/bash"
+         }
+     }
+   },
+  "forwardPorts": [],
+  "postCreateCommand": ""
+}
