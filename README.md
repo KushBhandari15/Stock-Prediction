@@ -20,3 +20,11 @@ Provide a more detailed introduction to your project. Explain what it does, why 
 1. Clone the repository:
    ```bash
    git clone <repository_url>
+2. Navigate to the project directory:
+   '''bash
+   cd <project_directory>
+   
+3. Install dependencies:
+   '''bash
+   pip install -r requirements.txt
+
