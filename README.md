@@ -1,6 +1,6 @@
-# Project Title
+# Stock Prediction Application
 
-Short description or overview of your project.
+This project is a Stock Prediction application built using Streamlit, which allows users to predict stock prices for various companies. Users can input the ticker symbol of a stock, select a start date, and specify the number of years for which they want to forecast the stock price. The application retrieves historical stock data using the Yahoo Finance API, processes it using the Prophet library, and generates forecast data along with interactive visualizations. The goal of the project is to provide users with insights into future stock price trends to aid in investment decision-making.
 
 ## Table of Contents
 
@@ -9,7 +9,6 @@ Short description or overview of your project.
 - [Usage](#usage)
 - [Testing](#testing)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -31,6 +30,19 @@ Provide a more detailed introduction to your project. Explain what it does, why 
 
 ## Usage
 
+### Inside Terminal
+1. Open your terminal and navigate to your project directory
+   ```bash
+   cd <project_directory>
+2. Run your code by using the following code
+   ```bash
+   py -m streamlit run <filename.py>
+3. You will be provided by a link to your application 
+
+![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/80fd453d-a879-499e-9c0c-4947d9ae6620)
+
+### Inside application
+
 1. Enter a start date and a ticker name
 
 ![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/2029cac9-14b7-483c-b666-5b7414478a6a)
@@ -41,7 +53,7 @@ Note: If ticker name is not found it would print "Data is empty! Please check if
 
 ![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/b951f568-f9d2-48a7-8e82-df477c63707a)
 
-4. Finally when all the data has been entered you can view the current data of the stock (displayed as raw data) and as well as its forecast which is displayed through both simple data table and graphs
+3. Finally when all the data has been entered you can view the current data of the stock (displayed as raw data) and as well as its forecast which is displayed through both simple data table and graphs
 
 ![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/b67fced3-fc49-4537-ac32-62cc5b59b4b0)
 
@@ -100,13 +112,7 @@ Reference any related issues or pull requests, if applicable.
 After submitting your pull request, it will be reviewed by the project maintainers. Please be patient, as it may take some time for your PR to be reviewed. We appreciate your contribution to the project!
 
 Note: Please ensure that your changes adhere to the project's coding style and conventions. Also, avoid making unrelated changes in your pull requests. If you're unsure about anything, feel free to ask for clarification in the PR discussion.
-## License
-This project is licensed under the [License Name] - see the LICENSE.md file for details.
 
-```bash
-Replace `<repository_url>` and `<project_directory>` with the actual URL of your repository and the directory where your project is located, respectively. Also, replace `[License Name]` with the appropriate license used for your project.
-
-Feel free to customize this template further to suit your project's specific needs and include any additional information you think would be relevant or useful for users and contributors.
 
 
 
