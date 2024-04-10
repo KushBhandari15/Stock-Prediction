@@ -30,7 +30,15 @@ Provide a more detailed introduction to your project. Explain what it does, why 
    pip install -r requirements.txt
 
 ## Usage
-ss
+
+1. Enter a start date and a ticker name
+![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/2029cac9-14b7-483c-b666-5b7414478a6a)
+
+Note: If ticker name is not found it would print "Data is empty! Please check if right ticker is entered"
+
+2. Choose number of years of forceast data you need using the slider
+![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/b951f568-f9d2-48a7-8e82-df477c63707a)
+
 
 ## Testing
 ss
