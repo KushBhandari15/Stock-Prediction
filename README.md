@@ -18,7 +18,7 @@ Provide a more detailed introduction to your project. Explain what it does, why 
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/KushBhandari15/Stock-Prediction
    
 2. Navigate to the project directory:
    ```bash
