@@ -29,3 +29,31 @@ Provide a more detailed introduction to your project. Explain what it does, why 
    ```bash
    pip install -r requirements.txt
 
+## Usage
+
+##Testing
+bash
+pytest
+
+##Contributing
+
+If you'd like to contribute to this project, please follow these guidelines:
+
+Fork the repository
+Create your feature branch (git checkout -b feature)
+Commit your changes (git commit -am 'Add new feature')
+Push to the branch (git push origin feature)
+Create a new Pull Request
+
+##License
+This project is licensed under the [License Name] - see the LICENSE.md file for details.
+
+```bash
+Replace `<repository_url>` and `<project_directory>` with the actual URL of your repository and the directory where your project is located, respectively. Also, replace `[License Name]` with the appropriate license used for your project.
+
+Feel free to customize this template further to suit your project's specific needs and include any additional information you think would be relevant or useful for users and contributors.
+
+
+
+
+
