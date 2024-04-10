@@ -32,12 +32,28 @@ Provide a more detailed introduction to your project. Explain what it does, why 
 ## Usage
 
 1. Enter a start date and a ticker name
+
 ![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/2029cac9-14b7-483c-b666-5b7414478a6a)
 
 Note: If ticker name is not found it would print "Data is empty! Please check if right ticker is entered"
 
 2. Choose number of years of forceast data you need using the slider
+
 ![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/b951f568-f9d2-48a7-8e82-df477c63707a)
+
+4. Finally when all the data has been entered you can view the current data of the stock (displayed as raw data) and as well as its forecast which is displayed through both simple data table and graphs
+
+![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/b67fced3-fc49-4537-ac32-62cc5b59b4b0)
+
+![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/c1dcdf38-4a2f-465b-887e-94c3c026cbee)
+
+![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/6869b614-4a08-4f89-bdc8-59110848595f)
+
+![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/2dca6db0-930a-43e5-b368-dfa4f87f0e92)
+
+![image](https://github.com/KushBhandari15/Stock-Prediction/assets/98527317/3360a0bd-e912-4743-afb7-a9de8822fb58)
+
+
 
 
 ## Testing
