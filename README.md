@@ -55,22 +55,51 @@ Note: If ticker name is not found it would print "Data is empty! Please check if
 
 
 
-
 ## Testing
-ss
-bash
-pytest
+
+### Automated Testing
+
+We have included some automated test cases to verify the functionality of the `test_stock_prediction` function in the `unit_test.py` file. These test cases cover various scenarios, including selecting invalid stocks, selecting valid stocks with different forecast durations, case-sensitive inputs, and empty inputs.
+
+To run the automated tests, you can execute the `unit_test.py` file using the following command:
+
+```bash
+python unit_test.py
+```
+
+### Custom Testing
+If needed, you can also create your own test cases by modifying the input parameters in the unit_test.py file and running the tests again. Ensure to provide valid input parameters for the stock ticker, start date, and forecast duration to test different scenarios.
+The test results will indicate whether each test case passed or failed.
 
 ## Contributing
 
-If you'd like to contribute to this project, please follow these guidelines:
+We welcome contributions from the community to improve this project. If you'd like to contribute, please follow these guidelines:
 
-Fork the repository
-Create your feature branch (git checkout -b feature)
-Commit your changes (git commit -am 'Add new feature')
-Push to the branch (git push origin feature)
-Create a new Pull Request
+1. Fork the repository on GitHub.
+2. Clone your forked repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
 
+3. Create a new branch for your changes:
+   ```bash
+   git checkout -b feature-name
+4. Replace feature-name with a descriptive name for your feature or fix.
+5. Make your changes in the codebase.
+6. Test your changes thoroughly to ensure they work as expected.
+7. Commit your changes:
+   ```bash
+   git commit -am 'Add new feature' 
+   ```
+8. Push your changes to your forked repository:
+   ```bash
+   git push origin feature-name
+
+9. Submit a pull request (PR) from your forked repository to the main branch of the original repository.
+Provide a clear title and description for your PR, explaining the purpose of the changes.
+Reference any related issues or pull requests, if applicable.
+After submitting your pull request, it will be reviewed by the project maintainers. Please be patient, as it may take some time for your PR to be reviewed. We appreciate your contribution to the project!
+
+Note: Please ensure that your changes adhere to the project's coding style and conventions. Also, avoid making unrelated changes in your pull requests. If you're unsure about anything, feel free to ask for clarification in the PR discussion.
 ## License
 This project is licensed under the [License Name] - see the LICENSE.md file for details.
 
