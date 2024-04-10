@@ -32,12 +32,12 @@ Provide a more detailed introduction to your project. Explain what it does, why 
 ## Usage
 ss
 
-##Testing
+## Testing
 ss
 bash
 pytest
 
-##Contributing
+## Contributing
 
 If you'd like to contribute to this project, please follow these guidelines:
 
@@ -47,7 +47,7 @@ Commit your changes (git commit -am 'Add new feature')
 Push to the branch (git push origin feature)
 Create a new Pull Request
 
-##License
+## License
 This project is licensed under the [License Name] - see the LICENSE.md file for details.
 
 ```bash
