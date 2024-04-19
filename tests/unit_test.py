@@ -1,5 +1,5 @@
 import unittest
-from main import test_stock_prediction
+from testing_stock_prediction.py import test_stock_prediction
 
 class TestStockPredictionApp(unittest.TestCase):
     
