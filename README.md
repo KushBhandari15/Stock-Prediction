@@ -12,7 +12,9 @@ This project is a Stock Prediction application built using Streamlit, which allo
 
 ## Introduction
 
-Provide a more detailed introduction to your project. Explain what it does, why it's useful, and any other relevant information.
+The Stock Prediction Application is a user-friendly tool built using Streamlit, designed to empower users to forecast stock prices for various companies effortlessly. By leveraging historical stock data from the Yahoo Finance API and the advanced forecasting capabilities of the Prophet library, users can gain insights into potential future trends in stock prices. This application aims to assist investors in making informed decisions by providing them with reliable predictions of stock price movements.
+
+Utilizing Streamlit's intuitive interface, users can input the ticker symbol of the stock they wish to analyze, select a start date for historical data retrieval, and specify the desired forecast period. The application then processes the data, trains a Prophet model, and generates forecasted stock prices. Users can visualize both the historical data and the forecasted prices through interactive charts and tables within the application.
 
 ## Installation
 
