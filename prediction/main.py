@@ -5,6 +5,17 @@ Created on Fri Mar 15 23:45:22 2024
 @author: Kush Bhandari
 """
 
+import streamlit as st
+from datetime import date
+import pandas as pd
+import yfinance as yf
+from prophet.plot import plot_plotly
+from prophet import Prophet
+from plotly.offline import plot
+from plotly import graph_objs as go
+import matplotlib.pyplot as plt
+import datetime
+
 """
 This function implements a stock prediction application using Facebook Prophet.
 
@@ -23,19 +34,6 @@ Raises:
     None
 
 """
-
-import streamlit as st
-from datetime import date
-import pandas as pd
-import yfinance as yf
-from prophet.plot import plot_plotly
-from prophet import Prophet
-from plotly.offline import plot
-from plotly import graph_objs as go
-import matplotlib.pyplot as plt
-import datetime
-
-# Function to define main application logic
 
 def stock_prediction ():
     
