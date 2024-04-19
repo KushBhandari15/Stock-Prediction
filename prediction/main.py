@@ -5,6 +5,25 @@ Created on Fri Mar 15 23:45:22 2024
 @author: Kush Bhandari
 """
 
+"""
+This function implements a stock prediction application using Facebook Prophet.
+
+The application allows the user to:
+    - Enter the start date for retrieving historical stock prices.
+    - Enter the ticker symbol of the stock for prediction.
+    - Choose the number of years for forecasting future stock prices.
+    
+It fetches historical stock data using the Yahoo Finance API (yfinance), preprocesses the data for Prophet's input requirements, trains a Prophet model,
+forecasts future stock prices, and visualizes both raw data and forecasted prices using Plotly charts.
+
+Returns:
+    None
+
+Raises:
+    None
+
+"""
+
 import streamlit as st
 from datetime import date
 import pandas as pd
@@ -97,43 +116,6 @@ def stock_prediction ():
     fig2 = model.plot_components(forecast)
     st.write(fig2)
     
-
-def test_stock_prediction(ticker, START, period):
-    
-    if not ticker.strip():
-        st.write("Ticker is empty! Please enter a ticker")
-        return False
-
-    TODAY = date.today().strftime("%Y-%m-%d")
-    #Using yfinance library to retrieve stock data
-    data = yf.download(ticker, START, TODAY)
-    #Reset index for date to be included as a column
-    data.reset_index(inplace=True)
-    data = pd.DataFrame(data)
-    
-    if data.empty:
-        st.write("Data is empty! Please check if right ticker is entered")
-        return False
-            
-    
-    #Pre-processing the data before predicting
-    #Prophet function needs the column to named as ds(Date) and y(Close)
-    df_train = data[['Date', 'Close']]
-    df_train = df_train.rename(columns={"Date": "ds", "Close": "y"})
-    
-    #Training our model
-    model = Prophet()
-    model.fit(df_train)
-    
-    #Forecasting stocks prices
-    future = model.make_future_dataframe(periods = period)
-    forecast = model.predict(future)
-    
-    if forecast.empty:
-        st.write("Error: Unable to generate forecast for the selected stock and time period.")
-        return False
-     
-    return True
     
     
   
